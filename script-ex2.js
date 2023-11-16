@@ -2,7 +2,11 @@ const btn = document.getElementById("btn-buscar");
 
 btn.addEventListener("click", buscar);
 
-function buscar() {
+function buscar(evento) {
+  // console.log(evento)
+  // console.log(evento.target)
+  evento.preventDefault()
+
   // pegar o elemento do input
   const entrada = document.getElementById("input-cep");
 
