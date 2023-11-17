@@ -5,13 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="script-ex2.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <h1>Busca CEP</h1>
     <form>
-      <label for="input-cep">CEP</label>
-      <input id="input-cep" />
-      <button id="btn-buscar">Buscar</button>
+      <div id="input-cep-container">
+        <label for="input-cep">CEP</label>
+        <input id="input-cep" required />
+        <button id="btn-buscar">Buscar</button>
+        <button type="reset">Limpar</button>
+        <button type="submit">Enviar</button>
+      </div>
+
+      <div id="form-address">
+        <div class="form-field">
+          <label for="rua">Rua:</label>
+          <input id="rua" required />
+        </div>
+
+        <div class="form-field">
+          <label for="numero">Numero:</label>
+          <input id="numero" required />
+        </div>
+
+        <div class="form-field">
+          <label for="complemento">Complemento:</label>
+          <input id="complemento" />
+        </div>
+
+        <div class="form-field">
+          <label for="bairro">Bairro:</label>
+          <input id="bairro" required />
+        </div>
+
+        <div class="form-field">
+          <label for="cidade">Cidade:</label>
+          <input id="cidade" required />
+        </div>
+
+        <div class="form-field">
+          <label for="estado">Estado:</label>
+          <input id="estado" required />
+        </div>
+      </div>
     </form>
   </body>
 </html>

@@ -1,0 +1,23 @@
+.form-field {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 200px;
+  /* gap: 12px; */
+}
+
+#form-address {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  width: 100%;
+  margin: 20px 0;
+}
+
+#input-cep-container {
+  display: flex;
+  gap: 6px;
+  width: 100%;
+}
+
